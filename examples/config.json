@@ -1,3 +1,7 @@
 {
-    "hello":"world"
+    "hello":"world",
+    "int":123,
+    "count":[
+        1, 2, 3
+    ]
 }

@@ -6,13 +6,12 @@ import (
 )
 
 // Open config file return a map
-func Open(path string) (config map[string]string, err error) {
+func Open(path string) (config map[string]interface{}, err error) {
 	file, err := ioutil.ReadFile(path)
 	if err != nil {
 		return
 	}
 
-	config = map[string]string{}
 	err = json.Unmarshal(file, &config)
 	if err != nil {
 		return

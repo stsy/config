@@ -15,4 +15,7 @@ func main() {
 
 	// Prints "world" form key "hello"
 	fmt.Println(conf["hello"])
+	fmt.Println(conf["int"])
+	fmt.Println(conf["count"])
+
 }
